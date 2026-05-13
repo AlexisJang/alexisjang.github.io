@@ -1,0 +1,11 @@
+.about-layout {
+  width: min(100vw - 3rem, 1080px);
+  margin-left: calc((100% - min(100vw - 3rem, 1080px)) / 2);
+}
+
+@media (max-width: 600px) {
+  .about-layout {
+    width: 100%;
+    margin-left: 0;
+  }
+}
