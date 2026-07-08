@@ -245,7 +245,6 @@ h1, h2, h3 {
 }
 
 
-
 /* ── Font ── */
 .fira-sans-thin {
   font-family: "Fira Sans", sans-serif;
@@ -353,4 +352,8 @@ h1, h2, h3 {
   font-family: "Fira Sans", sans-serif;
   font-weight: 900;
   font-style: italic;
+}
+
+body {
+  font-family: 'Fira Sans', Arial, sans-serif !important;
 }
