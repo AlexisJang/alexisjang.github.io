@@ -177,7 +177,7 @@ h1, h2, h3 {
 
 .paper-title {
   font-family: var(--font-heading);
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 600;
   margin-bottom: 0.2rem;
   color: var(--text-primary);
