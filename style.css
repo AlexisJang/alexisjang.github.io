@@ -112,9 +112,9 @@ h1, h2, h3 {
 
 .home-photo {
   width: min(500px, 100%);
-  height: 280px;
+  height: 240px;
   object-fit: cover;
-  object-position: center 42%;
+  object-position: center top;
   display: block;
   margin: 0 auto 1.8rem;
   border-radius: 8px;
