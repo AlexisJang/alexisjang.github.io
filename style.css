@@ -101,8 +101,8 @@ h1, h2, h3 {
 }
 
 .home-content {
-  max-width: 980px;
-  padding-top: 5rem;
+  max-width: 900px;
+  padding-top: 4rem;
 }
 
 .home-intro {
@@ -110,26 +110,27 @@ h1, h2, h3 {
 }
 
 .home-photo {
-  width: min(620px, 100%);
-  height: 350px;
+  width: min(560px, 100%);
+  height: 315px;
   object-fit: cover;
   object-position: center center;
   display: block;
-  margin: 0 auto 3rem;
+  margin: 0 auto 2.5rem;
   border-radius: 8px;
-  box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.10);
 }
 
 .home-intro h1 {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  margin-bottom: 3rem;
+  margin-bottom: 2.8rem;
+  text-align: center;
 }
 
 .home-bio {
-  max-width: 820px;
+  max-width: 760px;
   margin: 0 auto;
   text-align: left;
 }
