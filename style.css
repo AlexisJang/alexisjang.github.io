@@ -95,6 +95,73 @@ h1, h2, h3 {
 .nav-links a:hover { color: var(--accent); }
 .nav-links a.active { color: var(--accent); border-bottom-color: var(--accent); }
 
+/* ── Home page ── */
+.nav-only {
+  justify-content: flex-end;
+}
+
+.home-content {
+  max-width: 980px;
+  padding-top: 5rem;
+}
+
+.home-intro {
+  text-align: center;
+}
+
+.home-photo {
+  width: 300px;
+  height: 380px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  margin: 0 auto 3rem;
+  border-radius: 8px;
+  box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+}
+
+.home-intro h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.home-bio {
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.home-bio p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1.3rem;
+}
+
+@media (max-width: 600px) {
+  .nav-only {
+    justify-content: center;
+  }
+
+  .home-content {
+    padding-top: 3rem;
+  }
+
+  .home-photo {
+    width: 240px;
+    height: 310px;
+  }
+
+  .home-intro h1 {
+    font-size: 2.2rem;
+    letter-spacing: 0.04em;
+    margin-bottom: 2rem;
+  }
+}
+
+
 /* ── Page layout ── */
 .page-content {
   max-width: var(--max-width);
@@ -102,44 +169,6 @@ h1, h2, h3 {
   padding: 4rem 1.5rem 5rem;
 }
 
-/* ── About page ── */
-.about-layout {
-  display: flex;
-  gap: 2.5rem;
-  align-items: flex-start;
-}
-
-.about-photo {
-  flex-shrink: 0;
-  width: 240px;
-}
-
-.about-photo img {
-  width: 100%;
-  height: 310px;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-  border-radius: 50% / 45%;
-  border: 3px solid var(--border);
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-}
-
-.about-bio { flex: 1; }
-.about-bio p { margin-bottom: 1rem; font-size: .95rem; }
-
-@media (max-width: 600px) {
-  .about-layout {
-    flex-direction: column;
-  }
-  .about-photo {
-    width: 100%;
-  }
-  .about-photo img {
-    height: 220px;
-    border-radius: 0;
-  }
-}
 
 /* ── Research page ── */
 .section-heading {
@@ -177,7 +206,7 @@ h1, h2, h3 {
 
 .paper-title {
   font-family: var(--font-heading);
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.2rem;
   color: var(--text-primary);
@@ -354,6 +383,5 @@ h1, h2, h3 {
   font-style: italic;
 }
 
-body {
-  font-family: 'Fira Sans', Arial, sans-serif !important;
-}
+
+
