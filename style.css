@@ -137,10 +137,11 @@ h1, h2, h3 {
 }
 
 .home-bio p {
-  font-size: 0.95rem;
-  line-height: 1.65;
-  margin-bottom: 1.1rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin-bottom: 0.8rem;
 }
+
 
 @media (max-width: 600px) {
   .nav-only {
