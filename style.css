@@ -229,20 +229,17 @@ h1, h2, h3 {
 }
 
 .paper-actions {
-  display: grid;
-  grid-template-columns: max-content max-content;
-  column-gap: 1.5rem;
-  align-items: start;
+  position: relative;
   margin-top: 0.35rem;
+  padding-top: 0;
 }
 
 .paper-abstract {
-  display: contents;
+  margin: 0;
 }
 
 .paper-abstract summary {
-  grid-column: 1;
-  grid-row: 1;
+  display: inline-block;
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--accent);
@@ -255,26 +252,28 @@ h1, h2, h3 {
   display: none;
 }
 
-.paper-abstract p {
-  grid-column: 1 / -1;
-  grid-row: 2;
-  margin-top: 0.75rem;
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  line-height: 1.7;
-}
-
 .paper-action {
-  grid-column: 2;
-  grid-row: 1;
+  position: absolute;
+  top: 0;
+  left: 6.5rem;
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--accent);
   text-decoration: none;
 }
 
-.paper-action:hover,
-.paper-abstract summary:hover {
+.paper-abstract-text {
+  margin-top: 0.75rem;
+}
+
+.paper-abstract-text p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.paper-abstract summary:hover,
+.paper-action:hover {
   color: var(--accent-hover);
 }
 
