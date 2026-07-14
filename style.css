@@ -229,17 +229,20 @@ h1, h2, h3 {
 }
 
 .paper-actions {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  column-gap: 1.5rem;
+  align-items: start;
   margin-top: 0.35rem;
 }
 
 .paper-abstract {
-  margin-top: 0;
+  display: contents;
 }
 
 .paper-abstract summary {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
+  grid-column: 1;
+  grid-row: 1;
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--accent);
@@ -252,28 +255,28 @@ h1, h2, h3 {
   display: none;
 }
 
-.paper-abstract summary:hover {
-  color: var(--accent-hover);
-}
-
-.paper-action {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--accent);
-  text-decoration: none;
-}
-
-.paper-action:hover {
-  color: var(--accent-hover);
-}
-
 .paper-abstract p {
+  grid-column: 1 / -1;
+  grid-row: 2;
   margin-top: 0.75rem;
   font-size: 0.85rem;
   color: var(--text-secondary);
   line-height: 1.7;
 }
 
+.paper-action {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.paper-action:hover,
+.paper-abstract summary:hover {
+  color: var(--accent-hover);
+}
 
 
 /* ── Footer ── */
