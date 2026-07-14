@@ -250,6 +250,28 @@ h1, h2, h3 {
   line-height: 1.7;
 }
 
+.paper-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 0.35rem;
+}
+
+.paper-abstract {
+  margin-top: 0;
+}
+
+.paper-action {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.paper-action:hover {
+  color: var(--accent-hover);
+}
+
 /* ── Footer ── */
 .site-footer {
   background-color: var(--surface);
